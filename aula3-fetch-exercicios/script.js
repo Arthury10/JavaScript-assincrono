@@ -6,7 +6,7 @@ const endereco = document.querySelector('#endereco')
 const dadoCep = document.querySelector('#dadoCep')
 const resultado = document.querySelector('#resultado')
 
-endereco.addEventListener('submit', e => {
+endereco.addEventListener('change', e => {
 	e.preventDefault()
 	const cep = dadoCep.value
 	fetch(`https://viacep.com.br/ws/${cep}/json/`)
